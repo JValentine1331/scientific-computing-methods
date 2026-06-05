@@ -26,7 +26,8 @@ near the fixed point, the sequence converges to a solution. The method
 forms the foundation for several important iterative techniques in
 numerical analysis and scientific computing.
 
-## Reference
+Reference
+---------
 
 Burden, R. L., & Faires, J. D.
 Numerical Analysis.
@@ -92,11 +93,18 @@ def fixed_point(
     the fixed point.
     """
 
+    #start iteration and initilize storage
     i = 1
     history = [p0]
+    
+    #perform root finding
     while i <= max_iter:
+        
+        #calculate next value
         p = g(p0)
         history.append(p)
+        
+        #test convergence
         if abs(p-p0) < tol:
             return  {
                     "root": p,
