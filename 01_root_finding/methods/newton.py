@@ -133,23 +133,23 @@ def newton(
             "history": history,
             }
 
-#Quick Test
-def f(x):
-    return x**3 + 4*x**2 - 10
+# #Quick Test
+# def f(x):
+#     return x**3 + 4*x**2 - 10
 
-def df(x):
-    return 3*x**2 + 8*x
+# def df(x):
+#     return 3*x**2 + 8*x
 
-p0 = 1.5
-results = newton(f, df, p0)
-print(results)
+# p0 = 1.5
+# results = newton(f, df, p0)
+# print(results)
 
-def f(x):
-    return x**2 - 2
+# def f(x):
+#     return x**2 - 2
 
-def df(x):
-    return 2*x
+# def df(x):
+#     return 2*x
 
-p0 = 1.0
-results = newton(f, df, p0)
-print(results)
+# p0 = 1.0
+# results = newton(f, df, p0)
+# print(results)

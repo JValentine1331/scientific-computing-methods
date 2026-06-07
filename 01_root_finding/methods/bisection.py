@@ -141,15 +141,15 @@ def bisection(
             "history": history,
             }
 
-#Quick Test 
-def f(x):
-    return x**3 + 4*x**2 - 10
+# #Quick Test 
+# def f(x):
+#     return x**3 + 4*x**2 - 10
 
-result = bisection(f, 1, 2)
+# result = bisection(f, 1, 2)
 
-print(result)
+# print(result)
 
-def g(x):
-    return x**2 + 1
+# def g(x):
+#     return x**2 + 1
 
-bisection(g, -1, 1)
+# bisection(g, -1, 1)

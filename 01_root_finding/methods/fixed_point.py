@@ -124,25 +124,25 @@ def fixed_point(
             "history": history,
             }
             
-#Quick test
+# #Quick test
 
-def g(x):
-    return np.cos(x)
+# def g(x):
+#     return np.cos(x)
 
-result = fixed_point(g, 1.0)
+# result = fixed_point(g, 1.0)
 
-print(result)
+# print(result)
 
-p0 = 1.0
+# p0 = 1.0
 
-results = fixed_point(g, p0)
-print(results)
+# results = fixed_point(g, p0)
+# print(results)
 
-def g(x):
-    return (4 - x)**(1/3)
+# def g(x):
+#     return (4 - x)**(1/3)
 
-p0 = 1.5
+# p0 = 1.5
 
-results = fixed_point(g, p0)
-print(results)
+# results = fixed_point(g, p0)
+# print(results)
 

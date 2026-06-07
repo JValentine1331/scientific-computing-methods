@@ -143,12 +143,12 @@ def secant(
             "history": history,
             }
 
-#Quick test
-def f(x):
-    return x**3 + 4*x**2 - 10
+# #Quick test
+# def f(x):
+#     return x**3 + 4*x**2 - 10
 
-p0 = 1.0
-p1 = 2.0
+# p0 = 1.0
+# p1 = 2.0
 
-results = secant(f, p0, p1)
-print(results)
+# results = secant(f, p0, p1)
+# print(results)
