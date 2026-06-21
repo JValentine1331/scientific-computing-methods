@@ -21,12 +21,17 @@ def plot_error_history(errors,
     plt.semilogy(
         range(len(errors)),
         errors,
-        marker="o"
+        marker="o",
+        label=method_name
     )
 
     plt.xlabel("Iteration")
     plt.ylabel("Absolute Error")
-    plt.title("Error History")
-    plt.grid(True)
 
+    if method_name:
+        plt.title(f"{method_name} Error History")
+        plt.legend()
+
+    plt.grid(True)
+    plt.tight_layout()
     plt.show()

@@ -34,11 +34,11 @@ Numerical Analysis.
 """
 
 def fixed_point(
-                g: Callable[[float], float],
-                p0: float,
-                tol: float = 1e-8,
-                max_iter: int = 500,
-                ) -> dict:
+        g: Callable[[float], float],
+        p0: float,
+        tol: float = 1e-8,
+        max_iter: int = 500,
+        ) -> dict:
     
     """
     Approximate a fixed point of g(x) using fixed-point iteration.

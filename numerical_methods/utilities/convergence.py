@@ -47,7 +47,8 @@ def estimate_order_of_convergence(errors):
         e_n = errors[i - 1]
         e_np1 = errors[i]
         
-        if min(e_nm1, e_n, e_np1) <= 0:
+        # Skip estimates once errors approach machine precision
+        if min(e_nm1, e_n, e_np1) < 1e-14:
             continue
         
         p = np.log(e_np1 / e_n) / np.log(e_n / e_nm1)
